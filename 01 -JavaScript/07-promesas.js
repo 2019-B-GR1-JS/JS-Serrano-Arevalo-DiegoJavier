@@ -36,3 +36,24 @@ fs.readFile(
     'utf8',
     (error,)
 )*/
+
+const leerArchivo = (pathArchivo)=>{
+    return new Promise(
+        (resolve,reject)=>{
+            //res -> resolve, rej -> reject
+            fs.readFile(
+                pathArchivo,
+                'utf8',
+                (error, archivoLeido) =>{
+                    if(error){
+                        reject(error);
+                    }else{
+                        resolve(archivoLeido);
+                    }
+                }
+            )
+        }
+    )
+}
+
+leerArchivo('./05-callbacks.js')
