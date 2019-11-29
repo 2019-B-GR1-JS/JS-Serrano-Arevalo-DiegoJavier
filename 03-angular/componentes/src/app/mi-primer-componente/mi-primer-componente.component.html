@@ -4,9 +4,9 @@
 <!-- {{}} -> Interpolacion  -->
 <!-- MOSTRAR HTML -->
 <!-- Acceder a metodos y propiedades de la clase -->
-<img
-  [width]="ancho"
-     [height]="alto"
+<img   (mousemove)="disminuirImagen()"
+  [width]="ancho" 
+     [height]="alto" 
      [src]="imagen" alt="">
 <!-- Property Binding -->
 <!-- [atributo]="valor" -> Atributos -->
@@ -14,8 +14,19 @@
 
 <!-- Event Binding -->
 <!-- [evento]="miFuncion($event)" -> Evento -->
-<button (click)="aumentarSueldo()"
-        (mouseenter)="aumentarAltoAncho()"
+<button (click)="aumentarSueldo()"      
 >
   {{textoBoton}}
 </button>
+<div>
+  
+  <input type=""  placeholder="inserte un numero" (change)="getNumberA($event)" 
+  >
+  <input type="" placeholder="inserte otro numero"  (change)="getNumberB($event)"
+  (blur)= "Operar()" 
+  >
+  <input type="text" value={{totalSuma}}>
+  <input type="text" value={{totalResta}}>
+  <input type="text" value={{totalMultiplicacion}}>
+  <input type="text" value={{totalDivision}}>
+</div>
