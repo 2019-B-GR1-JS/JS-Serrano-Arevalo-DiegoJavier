@@ -1,0 +1,21 @@
+
+
+<h1>{{titulo}}</h1>
+<!-- {{}} -> Interpolacion  -->
+<!-- MOSTRAR HTML -->
+<!-- Acceder a metodos y propiedades de la clase -->
+<img
+  [width]="ancho"
+     [height]="alto"
+     [src]="imagen" alt="">
+<!-- Property Binding -->
+<!-- [atributo]="valor" -> Atributos -->
+<p>{{textoImagen}}</p>
+
+<!-- Event Binding -->
+<!-- [evento]="miFuncion($event)" -> Evento -->
+<button (click)="aumentarSueldo()"
+        (mouseenter)="aumentarAltoAncho()"
+>
+  {{textoBoton}}
+</button>
