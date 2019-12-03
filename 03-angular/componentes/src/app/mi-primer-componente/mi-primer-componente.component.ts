@@ -15,6 +15,9 @@ export class MiPrimerComponenteComponent
   totalResta =0;
   totalMultiplicacion=0;
   totalDivision=0;
+  fecha = new Date();
+  sueldo = 12.001;
+  
 /*
   @Input()
   total1:number;

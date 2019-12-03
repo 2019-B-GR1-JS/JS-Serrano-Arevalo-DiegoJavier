@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'componentes';
+  fecha = new Date();
+  sueldo = 12.001;
+  universidad = 'Escuela Politecnica Nacional';
+
   arregloObjetos = [
     {
       id: 1, // number
